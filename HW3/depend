@@ -1,0 +1,9 @@
+mm.o: mm.c mm.h
+list.o: list.c list.h mm.h
+list_ptr.o: list_ptr.c list_ptr.h mm.h list.h
+stack.o: stack.c stack.h list.h mm.h
+stack_ptr.o: stack_ptr.c stack_ptr.h list_ptr.h mm.h list.h stack.h
+main_stack.o: main_stack.c stack.h list.h mm.h stack_ptr.h list_ptr.h
+queue.o: queue.c queue.h list.h mm.h
+queue_ptr.o: queue_ptr.c queue_ptr.h list_ptr.h mm.h list.h
+main_queue.o: main_queue.c queue.h list.h mm.h queue_ptr.h list_ptr.h
